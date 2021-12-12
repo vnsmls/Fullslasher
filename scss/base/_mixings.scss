@@ -1,0 +1,7 @@
+
+
+@mixin p-fuentes ($ancho, $ptop, $tfuente) {
+    width: $ancho;
+    padding-top: $ptop;
+    font-size: $tfuente;
+}

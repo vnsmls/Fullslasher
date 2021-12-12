@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../../imagenes/broken_noise_@2X.png);
+}
+body header h1 {
+  font-family: "Oswald";
+  color: #aaadad;
+  display: none;
+}
+
+.texthome {
+  font-family: "Oswald";
+  color: #aaadad;
+  width: 100%;
+  padding-top: 5%;
+  font-size: 1.2em;
+}
+.texthome:hover {
+  color: red;
+}
+
+/*Inicio estilo del main, secciones 2 y 3*/
+/*Extends*/
+/*place holder*/
+/*Repito propiedades que quiera poner a un elemento*/
+.group1, main section .imgvid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.texts {
+  font-family: "Oswald";
+  font-size: 1.2em;
+  color: #aaadad;
+  width: 50%;
+  margin: auto;
+  padding-top: 2%;
+  border-bottom: 1px solid white;
+}
+.texts:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
+
+h2 {
+  font-family: "Oswald";
+  color: #aaadad;
+}
+
+main section {
+  padding-top: 77px;
+}
+main section .imgvid iframe {
+  width: 50%;
+}
+@media only screen and (max-width: 480px) {
+  main section .imgvid iframe {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  main section .imgvid iframe {
+    width: 100%;
+  }
+}
+main section .imgvid img {
+  width: 50%;
+}
+@media only screen and (max-width: 480px) {
+  main section .imgvid img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  main section .imgvid img {
+    width: 100%;
+  }
+}
+
+.group1 a {
+  width: 50%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+.group1 a img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  border-radius: 2%;
+}
+.group1 a img:hover {
+  filter: grayscale(0%);
+  transition: all 1s;
+}
+@media only screen and (max-width: 480px) {
+  .group1 a img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .group1 a img {
+    width: 100%;
+  }
+}
+
+footer #Maspeliculas {
+  padding-top: 77px;
+}
+footer #Maspeliculas h2 {
+  text-align: center;
+}
+
+/*Fin del estilo del main*/
+h2 {
+  font-family: "Oswald";
+  color: #aaadad;
+}
+
+footer .divf {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .divf .follow ul li, footer .divf .contact ul li {
+  margin: 10px auto;
+}
+footer .divf .follow ul li a img, footer .divf .contact ul li a img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+footer .divf .follow ul li a img:hover, footer .divf .contact ul li a img:hover {
+  filter: grayscale(0%);
+  transition: all 1s;
+}
+
+/*# sourceMappingURL=style.css.map */

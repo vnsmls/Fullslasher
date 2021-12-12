@@ -1,0 +1,31 @@
+h2 {
+    font-family: map-get($fuentes , font-style-all);
+    color: map-get($fuentes , color-all);
+}
+
+footer {
+    .divf {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .follow, .contact {
+            ul {
+                li {
+                    margin: 10px auto;
+                    a {
+                        img {
+                            -webkit-filter: grayscale(100%); 
+                            filter: grayscale(100%);
+                            &:hover {
+                                filter: grayscale(0%);
+                                transition: all 1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+}

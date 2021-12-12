@@ -1,0 +1,98 @@
+/*Inicio estilo del main, secciones 2 y 3*/
+@import "../base/maps";
+@import '../base/extends';
+
+.texts {
+    font-family: map-get($fuentes , font-style-all);
+    font-size: 1.2em;
+    color: map-get($fuentes , color-all);
+    width: 50%;   
+    margin: auto;  
+    padding-top: 2%;
+    border-bottom: 1px solid white;
+    &:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+
+}
+}
+
+h2 {
+    font-family: map-get($fuentes , font-style-all);
+    color: map-get($fuentes , color-all);
+}
+
+
+main{
+    section { 
+        padding-top: 77px;
+        .imgvid {
+            @extend %imgvid;
+            iframe {
+                width: 50%;
+                @media only screen and (max-width: 480px) {
+                width: 100%;
+                }
+            @media only screen and (min-width: 481px) and (max-width: 1024px) {
+                width: 100%;
+                }
+            }
+        
+            img {
+                width: 50%;
+                @media only screen and (max-width: 480px) {
+                width: 100%;
+                }
+            @media only screen and (min-width: 481px) and (max-width: 1024px) {
+                width: 100%;
+                }
+            
+            }
+        }
+    }
+}
+
+
+.group1 {
+    @extend %imgvid;
+            a {
+                width: 50%;
+                padding-top: 2%;
+                padding-left: 2%;
+                img {
+                    -webkit-filter: grayscale(100%); 
+                    filter: grayscale(100%);
+                    
+                    border-radius: 2%;
+                    &:hover {
+                        filter: grayscale(0%);
+                        transition: all 1s;
+                    }
+                    @media only screen and (max-width: 480px) {
+                        width:100%;
+                        }
+                    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+                        width: 100%;
+                        }
+                }
+            }
+}
+
+
+
+
+footer {
+    #Maspeliculas {
+        padding-top: 77px;
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+
+
+/*Fin del estilo del main*/

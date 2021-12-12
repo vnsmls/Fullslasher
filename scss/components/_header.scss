@@ -1,0 +1,30 @@
+
+@import "../base/maps";
+@import "../base/mixings";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-image: url(../../imagenes/broken_noise_@2X.png);
+  header {
+    h1 {
+      font-family: map-get($fuentes , font-style-all);
+      color: map-get($fuentes , color-all);
+      display: none;
+    }
+  }
+}
+
+.texthome {
+  font-family: map-get($fuentes , font-style-all);
+  color: map-get($fuentes , color-all);
+   @include p-fuentes(100%, 5%, 1.2em); 
+    &:hover {
+      color:red;
+    }
+
+}
