@@ -22,6 +22,17 @@ body header h1 {
 .texthome:hover {
   color: red;
 }
+@media only screen and (max-width: 480px) {
+  .texthome {
+    margin-top: 11%;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .texthome {
+    margin-top: 4%;
+  }
+}
 
 /*Inicio estilo del main, secciones 2 y 3*/
 /*Extends*/
@@ -40,16 +51,21 @@ body header h1 {
   width: 50%;
   margin: auto;
   padding-top: 2%;
-  border-bottom: 1px solid white;
 }
 .texts:hover {
   transform: scale(1.1);
   transition: all 2s;
 }
+@media only screen and (max-width: 480px) {
+  .texts {
+    font-size: 0.8em;
+  }
+}
 
 h2 {
   font-family: "Oswald";
   color: #aaadad;
+  padding-left: 1%;
 }
 
 main section {
@@ -114,7 +130,6 @@ footer #Maspeliculas h2 {
   text-align: center;
 }
 
-/*Fin del estilo del main*/
 h2 {
   font-family: "Oswald";
   color: #aaadad;
@@ -136,6 +151,17 @@ footer .divf .follow ul li a img, footer .divf .contact ul li a img {
 footer .divf .follow ul li a img:hover, footer .divf .contact ul li a img:hover {
   filter: grayscale(0%);
   transition: all 1s;
+}
+
+p {
+  font-family: "Oswald";
+  color: #aaadad;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 0.8em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

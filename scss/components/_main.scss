@@ -9,17 +9,19 @@
     width: 50%;   
     margin: auto;  
     padding-top: 2%;
-    border-bottom: 1px solid white;
     &:hover{
     transform: scale(1.1);
     transition: all 2s;
-
 }
+@media only screen and (max-width: 480px) {
+    font-size: 0.8em;
+    }
 }
 
 h2 {
     font-family: map-get($fuentes , font-style-all);
     color: map-get($fuentes , color-all);
+    padding-left: 1%;
 }
 
 
@@ -28,6 +30,7 @@ main{
         padding-top: 77px;
         .imgvid {
             @extend %imgvid;
+            
             iframe {
                 width: 50%;
                 @media only screen and (max-width: 480px) {
@@ -92,7 +95,3 @@ footer {
 
 
 
-
-
-
-/*Fin del estilo del main*/

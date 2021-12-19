@@ -14,18 +14,31 @@ footer {
                 li {
                     margin: 10px auto;
                     a {
+                        
                         img {
+                    
                             -webkit-filter: grayscale(100%); 
                             filter: grayscale(100%);
                             &:hover {
                                 filter: grayscale(0%);
                                 transition: all 1s;
                         }
+                        
                     }
                 }
             }
         }
     }
 }
+
+}
+
+p {
+    font-family: map-get($fuentes , font-style-all);
+    color: map-get($fuentes , color-all);
+    text-align: center;
+    @media only screen and (max-width: 480px) {
+        font-size: 0.8em;
+        }
 
 }
